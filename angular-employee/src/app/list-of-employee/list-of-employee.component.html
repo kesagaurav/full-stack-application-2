@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <div class="card" *ngFor="let employee of employees">
+        <!-- <img class="card-img-top" style="width: 200px; height: 200px;" [src]="player.avatar" alt="{{player.name}}"> -->
+        <div class="card-body">
+            <h5 class="card-title">{{employee.name | uppercase}}</h5>
+            <p class="card-text">Salarly: {{employee.salarly}}</p>
+            <!-- <p class="card-text">TeamName: {{player.teamName}}</p>
+            <p class="card-text">City: {{player.city}}</p> -->
+           <p class="card-text"> <button type="button" class="btn btn-danger" (click)="deleteEmployee(employee.id)">delete</button></p>
+
+        </div>
+    </div>
+</div>
